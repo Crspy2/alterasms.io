@@ -18,7 +18,7 @@ export const Footer = () => {
                 <p className="text-xs sm:text-sm md:text-base">Copyright 2024 AlteraSMS — All Rights Reserved.</p>
             </div>
             <div className="hidden md:flex flex-row gap-1.5">
-                <LinkPreview url="/discord" target="_blank">
+                <LinkPreview url="https://discord.gg/ku8dp8cdSs" target="_blank">
                     <FaDiscord className="w-8 h-8 bg-[#454FBF] rounded-md p-1"/>
                 </LinkPreview>
                 <LinkPreview url="https://shop.alterasms.io">

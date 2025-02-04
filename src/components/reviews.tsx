@@ -96,7 +96,7 @@ export const ReviewCards = () => {
                 <h3 className="text-5xl font-semibold font-poppins text-center">What People Are Saying</h3>
                 <span className="text-lg dark:text-neutral-200 max-w-lg text-center">
                     Don&apos;t just take our word for it. Here&apos;s what <strong>real people</strong> are saying about AlteraSMS in our{" "}
-                    <LinkPreview url="https://alterasms.io/discord"
+                    <LinkPreview url="https://discord.gg/ku8dp8cdSs"
                                  className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
                         Discord Server
                     </LinkPreview>.

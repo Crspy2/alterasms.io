@@ -89,7 +89,7 @@ export const Navigation = () => {
                         tabIndex={scrolled ? -1 : undefined}
                     >
                         <Button
-                            href="/discord"
+                            href="https://discord.gg/ku8dp8cdSs"
                             target="_blank"
                             size="sm"
                             shape="square"

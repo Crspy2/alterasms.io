@@ -45,7 +45,7 @@ export const FAQ = () => {
                         <h2 className="text-5xl font-bold leading-none tracking-tight font-poppins">Frequently asked questions</h2>
                         <span className="mt-4 text-base leading-7">
                             Can’t find the answer you’re looking for? Reach out to our{' '}
-                            <LinkPreview url="https://alterasms.io/discord"
+                            <LinkPreview url="https://discord.gg/ku8dp8cdSs"
                                          className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
                                 customer support team via Discord
                             </LinkPreview>

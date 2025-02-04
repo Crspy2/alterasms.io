@@ -105,10 +105,10 @@ function PrivacyPolicyRoute(){
                         <li><a href="mailto:support@alterasms.io" target="_blank">support@alterasms.io</a></li>
                         <li>
                             <LinkPreview
-                                url="https://alterasms.io/discord"
+                                url="https://discord.gg/ku8dp8cdSs"
                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500"
                             >
-                                https://alterasms.io/discord
+                                https://discord.gg/ku8dp8cdSs
                             </LinkPreview>
                         </li>
                     </ul>
