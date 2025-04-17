@@ -21,9 +21,6 @@ export const Footer = () => {
                 <LinkPreview url="https://discord.gg/ku8dp8cdSs" target="_blank">
                     <FaDiscord className="w-8 h-8 bg-[#454FBF] rounded-md p-1"/>
                 </LinkPreview>
-                <LinkPreview url="https://shop.alterasms.io">
-                    <img src="/sellix.svg" alt="Sellix logo" className="w-8 h-8 rounded-md"/>
-                </LinkPreview>
             </div>
         </div>
     )

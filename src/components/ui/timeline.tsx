@@ -41,11 +41,7 @@ const items = [
                     </li>
                     <li>
                         <strong>2. </strong>
-                        Add funds to your account through our{" "}
-                        <LinkPreview url="https://sellix.com"
-                                     className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
-                            Sellix
-                        </LinkPreview>{" "}
+                        Add funds to your account through our
                         payment integration via Credit/Debit cards, PayPal, CashApp, or a variety of
                         cryptocurrencies.
                     </li>
