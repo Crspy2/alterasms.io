@@ -26,7 +26,7 @@ export const Hero = () => {
                     className="flex flex-col gap-4 md:gap-0 px-4 text-black dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto">
                     <div className="flex items-center justify-center">
                         <a
-                            href="https://dashboard.alterasms.io"
+                            href="https://dash.alterasms.io"
                             className={cn(
                                 "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
                             )}
@@ -55,12 +55,12 @@ export const Hero = () => {
                         </div>
                         <div className="flex flex-row gap-4 max-w-sm mx-auto">
                             <a
-                                href="https://dashboard.alterasms.io/login"
+                                href="https://dash.alterasms.io/login"
                                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:focus-visible:ring-gray-300 bg-gray-900 text-gray-50 shadow hover:bg-gray-900/90 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 px-4"
                             >
                                 Sign In
                             </a>
-                            <a href="https://dashboard.alterasms.io/register">
+                            <a href="https://dash.alterasms.io/register">
                                 <ShinyButton text="Get Started" className=""/>
                             </a>
                         </div>

@@ -32,7 +32,7 @@ const faqs = [
     },
     {
         question: 'How do I get started with AlteraSMS?',
-        answer: 'Getting started with AlteraSMS is quick and easy. Begin by visiting our registration page at https://dashboard.alterasms.io/register to create your account. Once registered, simply log in to access your personalized dashboard. From there, you can deposit funds and start managing your SMS needs. Your dashboard serves as your control center for all AlteraSMS services, putting everything you need at your fingertips.'
+        answer: 'Getting started with AlteraSMS is quick and easy. Begin by visiting our registration page at https://dash.alterasms.io/register to create your account. Once registered, simply log in to access your personalized dashboard. From there, you can deposit funds and start managing your SMS needs. Your dashboard serves as your control center for all AlteraSMS services, putting everything you need at your fingertips.'
     }
 ]
 

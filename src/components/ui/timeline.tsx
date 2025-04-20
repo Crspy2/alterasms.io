@@ -28,7 +28,7 @@ const items = [
                     <li>
                         <strong>1. </strong>
                         Register for an account on{" "}
-                        <LinkPreview url="https://dashboard.alterasms.io/"
+                        <LinkPreview url="https://dash.alterasms.io/"
                                      className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
                             our dashboard
                         </LinkPreview>{" "}
