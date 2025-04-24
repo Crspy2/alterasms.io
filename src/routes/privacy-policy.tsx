@@ -101,8 +101,7 @@ function PrivacyPolicyRoute(){
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
           <ul className="list-disc text-sm ml-4">
-            <li>AlteraSMS</li>
-            <li><a href="mailto:support@alterasms.io" target="_blank">support@alterasms.io</a></li>
+            <li><a href="mailto:support@alterasms.io" target="_blank" className="hover:underline underline-offset-1">support@alterasms.io</a></li>
             <li>
               <LinkPreview
                 url="https://discord.gg/ku8dp8cdSs"

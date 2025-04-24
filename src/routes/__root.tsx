@@ -8,15 +8,15 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
-    return (
-        <ThemeProvider defaultTheme="dark">
-            <div>
-                <div className="fixed top-0 left-0 right-0 z-50">
-                    <Navigation />
-                </div>
-                <Outlet />
-                <Footer/>
-            </div>
-        </ThemeProvider>
-    )
+  return (
+    <ThemeProvider defaultTheme="dark">
+      <div>
+        <div className="fixed top-0 left-0 right-0 z-50">
+          <Navigation />
+        </div>
+        <Outlet />
+        <Footer/>
+      </div>
+    </ThemeProvider>
+  )
 }
