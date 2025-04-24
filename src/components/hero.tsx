@@ -42,13 +42,13 @@ export const Hero = () => {
                     <div className="flex flex-col gap-10">
                         <div className="flex flex-col gap-3">
                             <h1
-                                className="font-poppins font-bold text-2xl md:text-4xl lg:text-5xl leading-relaxed md:leading-snug lg:leading-snug text-black dark:text-white">
+                                className="font-poppins font-bold text-2xl md:text-4xl lg:text-5xl leading-relaxed md:leading-snug lg:leading-tight text-black dark:text-white">
                                 Secure SMS Verification<br/>
                                 <Highlight className="text-black dark:text-white">
                                     for everyone
                                 </Highlight>
                             </h1>
-                            <h3 className="max-w-lg text-sm">
+                            <h3 className="max-w-lg text-sm text-neutral-200">
                                 Value your digital privacy and don&apos;t want to use your phone number? Protect
                                 yourself and use our non-VoIP phone numbers to verify your accounts.
                             </h3>

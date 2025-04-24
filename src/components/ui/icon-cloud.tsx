@@ -7,7 +7,7 @@ import {
   SimpleIcon,
 } from "react-icon-cloud"
 
-export const cloudProps: Omit<ICloud, "children"> = {
+const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
       display: "flex",
@@ -34,16 +34,12 @@ export const cloudProps: Omit<ICloud, "children"> = {
   },
 }
 
-export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
-  const bgHex = theme === "light" ? "#f3f2ef" : "#080510"
-  const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff"
-  const minContrastRatio = theme === "dark" ? 2 : 1.2
-
+const renderCustomIcon = (icon: SimpleIcon) => {
   return renderSimpleIcon({
     icon,
-    bgHex,
-    fallbackHex,
-    minContrastRatio,
+    bgHex: "#080510",
+    fallbackHex: "#ffffff",
+    minContrastRatio: 2,
     size: 42,
     aProps: {
       href: undefined,
@@ -71,7 +67,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     if (!data) return null
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, "dark"),
+      renderCustomIcon(icon),
     )
   }, [data])
 

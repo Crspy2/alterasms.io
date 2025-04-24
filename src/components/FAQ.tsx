@@ -45,14 +45,14 @@ export const FAQ = () => {
         <div id="faq" className="">
             <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-                    <div className="flex flex-col gap-y-2 lg:col-span-5">
-                        <h2 className="text-5xl font-bold leading-none tracking-tight font-poppins">Frequently asked questions</h2>
-                        <span className="mt-4 text-base leading-1">
-                            Can’t find the answer you’re looking for? Reach out to our{' '}
+                    <div className="flex flex-col lg:col-span-5">
+                        <h2 className="text-3xl font-semibold font-poppins">Frequently asked questions</h2>
+                        <span className="mt-4 text-base leading-1 text-neutral-200">
+                            Can’t find the answer you’re looking for? Reach out to our customer support team through{' '}
                             <LinkPreview url="https://discord.gg/ku8dp8cdSs"
                                          className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
-                                customer support team via Discord
-                            </LinkPreview>
+                                Discord
+                            </LinkPreview>.
                         </span>
                     </div>
                     <div className="mt-10 lg:col-span-7 lg:mt-0">
