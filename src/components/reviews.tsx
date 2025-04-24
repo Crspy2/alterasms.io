@@ -92,12 +92,12 @@ const ReviewCard = ({
 export const ReviewCards = () => {
     return (
         <div className="flex flex-col gap-12 md:mt-12">
-            <div className="flex flex-col justify-center items-center gap-4">
-                <h3 className="text-5xl font-semibold font-poppins text-center">What People Are Saying</h3>
-                <span className="text-lg dark:text-neutral-200 max-w-lg text-center">
+            <div className="flex flex-col justify-center items-center gap-y-4">
+                <h3 className="text-3xl font-semibold font-poppins">What People Are Saying</h3>
+                <span className="text-neutral-200 max-w-lg text-center">
                     Don&apos;t just take our word for it. Here&apos;s what <strong>real people</strong> are saying about AlteraSMS in our{" "}
                     <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
+                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
                         Discord Server
                     </LinkPreview>.
                 </span>
@@ -113,8 +113,8 @@ export const ReviewCards = () => {
                         <ReviewCard key={review.username} {...review} />
                     ))}
                 </Marquee>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-black"></div>
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-black"></div>
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-black"></div>
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-black"></div>
             </div>
         </div>
     )

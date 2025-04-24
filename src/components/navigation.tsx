@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button.tsx";
 import { useScrolled } from "@/hooks/use-scrolled";
 import { cn } from "@/lib/utils/classes";
 import { focusRing } from "@/lib/utils/styles";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { FaDiscord } from "react-icons/fa6";
 
 const links = [
@@ -98,7 +97,6 @@ export const Navigation = () => {
                         >
                             <FaDiscord />
                         </Button>
-                        <ThemeToggle />
                     </div>
                 </div>
             </div>
