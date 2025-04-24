@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react"
-import { useTheme } from "@/components/theme-provider"
 import {
   Cloud,
   fetchSimpleIcons,
@@ -63,7 +62,6 @@ type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null)
-  const { theme } = useTheme()
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData)
@@ -73,9 +71,9 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     if (!data) return null
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
+      renderCustomIcon(icon, "dark"),
     )
-  }, [data, theme])
+  }, [data])
 
   return (
     <Cloud {...cloudProps}>
