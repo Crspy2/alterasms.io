@@ -117,7 +117,7 @@ export const AnimatedSteps = ({ className }: { className?: string }) => {
     return (
         <div
             className={cn(
-                "bg-white dark:bg-black relative flex flex-col h-[500px] w-full p-6 overflow-hidden rounded-lg border border-black/[0.2] dark:border-white/[0.2] md:shadow-xl",
+                "bg-white dark:bg-black relative flex flex-col h-[500px] w-full p-6 overflow-hidden rounded-lg border border-white/[0.2] md:shadow-xl",
                 className,
             )}
         >

@@ -23,19 +23,19 @@ const items = [
         leftcontent: (
             <ol className="text-neutral-200 space-y-2">
                 <li className="flex flex-col">
-                    <strong>1. Deposit funds into your account</strong>
+                    <strong className="text-neutral-100">1. Deposit funds into your account</strong>
                     Add funds to your account via Paypal, Cashapp, Credit/Debit cards or Cryptocurrencies.
                 </li>
                 <li className="flex flex-col">
-                    <strong>2. Select your service</strong>
-                    Select your service from wide list of supported services.
+                    <strong className="text-neutral-100">2. Select your service</strong>
+                    Select the service you want to receive a verification code for from our wide list of supported services.
                 </li>
                 <li className="flex flex-col">
-                    <strong>3. Choose your country</strong>
+                    <strong className="text-neutral-100">3. Choose your country</strong>
                     Select the country you want your number to be from.
                 </li>
                 <li className="flex flex-col">
-                    <strong>4. Receive your code</strong>
+                    <strong className="text-neutral-100">4. Receive your code</strong>
                     Request a sms code from your service, and wait it to appear in our dashboard.
                 </li>
             </ol>

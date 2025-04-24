@@ -6,7 +6,7 @@ export const Info = () => {
     <div className="flex flex-col gap-y-3.5 items-center px-4 md:px-10 my-16 max-w-7xl mx-auto">
       <h2 className="text-3xl font-semibold font-poppins">SMS verification that <strong>JUST</strong> works.</h2>
       <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-4">
-        <img src="/numbers.png" alt="Picture of numbers listed on our dashboard"  />
+        <img src="/numbers.png" alt="Picture of numbers listed on our dashboard" />
         <div className="flex flex-col justify-evenly gap-y-4 md:-mt-3">
           <div className="flex flex-row gap-x-2.5">
             <TbLabelImportantFilled className="flex-shrink-0 mt-2 size-7 text-cyan-400" />
