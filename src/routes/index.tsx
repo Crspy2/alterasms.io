@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Hero } from "@/components/hero.tsx"
 import { Services } from "@/components/services.tsx"
 import { Info } from "@/components/info.tsx"
-import { Timeline } from "@/components/ui/timeline.tsx"
+import { Features } from "@/components/features.tsx"
 import { ReviewCards } from "@/components/reviews.tsx"
 import { FAQ } from "@/components/FAQ.tsx"
 
@@ -20,7 +20,7 @@ function HomeComponent() {
         </div>
       </div>
       <Info />
-      <Timeline />
+      <Features />
       <ReviewCards />
       <FAQ />
     </main>
