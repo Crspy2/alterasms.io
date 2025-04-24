@@ -13,6 +13,10 @@ const faqs = [
             'We offer flexible payment options to suit your preferences. AlteraSMS accepts all major credit cards (Visa, MasterCard, American Express, Discover), popular digital wallets like PayPal and CashApp, as well as a wide range of cryptocurrencies. Your convenience is our priority.'
     },
     {
+        question: 'Do your numbers work for Ubisoft and Rainbow Six Siege?',
+        answer: 'Yes, our numbers have been vigorously tested and confirmed to be working with Ubisoft.'
+    },
+    {
         question: 'How much does it cost?',
         answer:
             'Our flexible pricing starts at just $0.10 per number. We offer a "pay what you want" model to accommodate various budgets. You can deposit any amount you choose, with a minimum deposit of $2 per transaction. This approach allows you to control your spending while accessing our services.',
@@ -41,12 +45,12 @@ export const FAQ = () => {
         <div id="faq" className="">
             <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-                    <div className="lg:col-span-5">
+                    <div className="flex flex-col gap-y-2 lg:col-span-5">
                         <h2 className="text-5xl font-bold leading-none tracking-tight font-poppins">Frequently asked questions</h2>
-                        <span className="mt-4 text-base leading-7">
+                        <span className="mt-4 text-base leading-1">
                             Can’t find the answer you’re looking for? Reach out to our{' '}
                             <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                                         className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
+                                         className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
                                 customer support team via Discord
                             </LinkPreview>
                         </span>

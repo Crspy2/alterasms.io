@@ -370,3 +370,8 @@
     --tile: theme(colors.neutral.900);
   }
 }
+
+
+::selection {
+  @apply bg-cyan-700;
+}

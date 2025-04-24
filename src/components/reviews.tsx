@@ -97,7 +97,7 @@ export const ReviewCards = () => {
                 <span className="text-lg dark:text-neutral-200 max-w-lg text-center">
                     Don&apos;t just take our word for it. Here&apos;s what <strong>real people</strong> are saying about AlteraSMS in our{" "}
                     <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
+                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
                         Discord Server
                     </LinkPreview>.
                 </span>

@@ -6,10 +6,8 @@ import {
 import { useEffect, useRef, useState } from "react"
 import { LinkPreview } from "@/components/ui/link-preview"
 import { AnimatedSteps } from "@/components/animated-steps"
-import { EncryptedCard } from "@/components/ui/encrypted-card.tsx"
 import { ServiceCloud } from "@/components/service-cloud"
 import { CommunicationModel } from "@/components/communication-model"
-import { SiLetsencrypt } from "react-icons/si"
 import { MdAutoMode } from "react-icons/md"
 import { FaTasks } from "react-icons/fa"
 import { FaLayerGroup } from "react-icons/fa6"
@@ -18,48 +16,28 @@ const items = [
     {
         title: (
             <span className="flex gap-2 items-start">
-                <FaTasks className="hidden md:inline text-blue-500 dark:text-blue-600"/>
+                <FaTasks className="hidden md:inline text-cyan-400"/>
                 <h3>Easy to use</h3>
             </span>
         ),
         leftcontent: (
             <div>
                 <ol className="space-y-2">
-                    <li>
-                        <strong>1. </strong>
-                        Register for an account on{" "}
-                        <LinkPreview url="https://dash.alterasms.io/"
-                                     className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
-                            our dashboard
-                        </LinkPreview>{" "}
-                        by linking your{" "}
-                        <LinkPreview url="https://discord.com"
-                                     className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
-                            Discord
-                        </LinkPreview>{" "}
-                        account, or through an email-password combination.
+                    <li className="flex flex-col">
+                        <strong>1. Deposit funds into your account</strong>
+                        Add funds to your account via Paypal, Cashapp, Credit/Debit cards or Cryptocurrencies.
                     </li>
-                    <li>
-                        <strong>2. </strong>
-                        Add funds to your account through our
-                        payment integration via Credit/Debit cards, PayPal, CashApp, or a variety of
-                        cryptocurrencies.
+                    <li className="flex flex-col">
+                        <strong>2. Select your service</strong>
+                        Select your service from wide list of supported services.
                     </li>
-                    <li>
-                        <strong>3. </strong>
-                        Generate a phone number through our dashboard by specifying a service and
-                        country combination.
+                    <li className="flex flex-col">
+                        <strong>3. Choose your country</strong>
+                        Select the country you want your number to be from.
                     </li>
-                    <li>
-                        <strong>4. </strong>
-                        Enter the phone number information on your desired site and wait for our
-                        real-time system to
-                        display
-                        received sms codes, or notify you through{" "}
-                        <LinkPreview url="https://discord.com"
-                                     className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
-                            Discord
-                        </LinkPreview>.
+                    <li className="flex flex-col">
+                        <strong>4. Receive your code</strong>
+                        Request a sms code from your service, and wait it to appear in our dashboard.
                     </li>
                 </ol>
             </div>
@@ -69,41 +47,9 @@ const items = [
         )
     },
     {
-        title: (
-            <span className="flex gap-2 items-start">
-                <SiLetsencrypt className="hidden md:inline text-blue-500 dark:text-blue-600" />
-                <h3>Secure Data</h3>
-            </span>
-        ),
-        leftcontent: (
-            <div>
-                <span>
-                    Your security is our priority. Our SMS service uses <strong>secure webhooks</strong> to send
-                    real-time notifications, keeping your data safe. We protect your account with strong{" "}
-                    <strong>authentication and authorization</strong> measures to ensure only you can access your
-                    information. Learn more about how we keep your data secure by visiting{" "}
-                    <LinkPreview url="https://owasp.org/"
-                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
-                        OWASP
-                    </LinkPreview>{" and "}
-                    <LinkPreview url="https://oauth.net/"
-                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
-                        OAuth
-                    </LinkPreview>.
-                </span>
-            </div>
-        ),
-        rightcontent: (
-            <div
-                className="relative flex h-[30rem] max-w-sm items-center justify-center overflow-hidden border bg-white dark:bg-black p-2 md:shadow-xl">
-                <EncryptedCard text="🔒"/>
-            </div>
-        )
-    },
-    {
         title:  (
             <span className="flex gap-2 items-start">
-                <FaLayerGroup className="hidden md:inline text-blue-500 dark:text-blue-600"/>
+                <FaLayerGroup className="hidden md:inline text-cyan-400"/>
                 <h3>Wide Coverage</h3>
             </span>
         ),
@@ -113,9 +59,9 @@ const items = [
                     Connect with over 1500 websites and services across 150+ countries through our platform. Can&apos;t find what you need? Reach
                     out on our{" "}
                     <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-blue-500">
+                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
                         Discord server
-                    </LinkPreview>{" "}
+                    </LinkPreview>
                     , and we&apos;ll work to add your requested service.
                 </span>
             </div>
@@ -127,7 +73,7 @@ const items = [
     {
         title: (
             <span className="flex gap-2 items-start mt-12 md:mt-0">
-                <MdAutoMode className="hidden md:inline text-blue-500 dark:text-blue-600"/>
+                <MdAutoMode className="hidden md:inline text-cyan-400"/>
                 <h3>Auto Delivery</h3>
             </span>
         ),
@@ -168,7 +114,7 @@ export const Timeline = () => {
 
     return (
         <div
-            className="w-full font-sans md:px-10"
+            className="w-full font-sans md:px-10 -mt-20"
             ref={containerRef}
         >
             <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
