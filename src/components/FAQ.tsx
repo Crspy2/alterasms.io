@@ -47,7 +47,7 @@ export const FAQ = () => {
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                     <div className="flex flex-col lg:col-span-5">
                         <h2 className="text-3xl font-semibold font-poppins">Frequently asked questions</h2>
-                        <span className="mt-4 text-base leading-1 text-neutral-200">
+                        <span className="mt-4 text-sm text-neutral-300">
                             Can’t find the answer you’re looking for? Reach out to our customer support team through{' '}
                             <LinkPreview url="https://discord.gg/ku8dp8cdSs"
                                          className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">

@@ -3,7 +3,7 @@ import { FaDiscord } from "react-icons/fa6"
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-7 w-full text-sm mt-12 mb-20">
+    <div className="flex flex-col items-center justify-center gap-y-7 w-full text-sm pt-8 mb-20 border-t">
       <div className="flex gap-x-5">
         <Link to="/terms" className="hover:underline underline-offset-1">
           Terms of Service

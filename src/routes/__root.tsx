@@ -1,7 +1,7 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
-import { ThemeProvider } from "@/components/theme-provider.tsx"
-import { Navigation } from "@/components/navigation.tsx"
-import { Footer } from "@/components/footer.tsx"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 
 export const Route = createRootRoute({
   component: RootComponent,

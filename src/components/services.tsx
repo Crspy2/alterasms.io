@@ -73,8 +73,8 @@ export function Services() {
         <Marquee repeat={13} className="[--duration:40s]">
           {services.map((service) => (
             <span className="h-10 w-64 flex items-center justify-center mx-4 contrast-0 my-auto" key={service.name}>
-                        <img src={service.src} alt={service.name} className="h-14 w-auto" />
-                    </span>
+              <img src={service.src} alt={service.name} className="h-14 w-auto" />
+            </span>
           ))}
         </Marquee>
         <div

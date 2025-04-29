@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from "react"
 import { Link, useRouter } from '@tanstack/react-router'
-import { Avatar } from "@/components/ui/avatar.tsx";
-import { Badge } from "@/components/ui/badge.tsx";
-import { Button } from "@/components/ui/button.tsx";
+import { Avatar } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { useScrolled } from "@/hooks/use-scrolled";
 import { cn } from "@/lib/utils/classes";
 import { focusRing } from "@/lib/utils/styles";
@@ -51,7 +51,7 @@ export const Navigation = () => {
                                 AlteraSMS
                             </div>
                             <Badge size="sm" variant="neutral" className="border">
-                                v2
+                                v3
                             </Badge>
                         </Link>
                     </div>
