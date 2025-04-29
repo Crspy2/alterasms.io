@@ -51,6 +51,18 @@ const reviews = [
         body: "+rep Great way to get any phone number for verification",
         img: "/avatars/wrecxkd_avatar.gif",
     },
+    {
+        name: "Bit",
+        username: "@bitdotdash",
+        body: "+rep @Crspy Helped out quick and phone number worked for Ubisoft ✅",
+        img: "/avatars/bit_avatar.webp",
+    },
+    {
+        name: "selo",
+        username: "@sselo25",
+        body: "+rep @Crspy the goat helped me with a lot of stuff phone number and everything worked for ubisoft",
+        img: "/avatars/selo_avatar.png",
+    }
 ]
 
 const firstRow = reviews.slice(0, reviews.length / 2)
