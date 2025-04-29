@@ -1,10 +1,11 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Hero } from "@/components/hero.tsx"
-import { Services } from "@/components/services.tsx"
-import { Info } from "@/components/info.tsx"
-import { Features } from "@/components/features.tsx"
-import { ReviewCards } from "@/components/reviews.tsx"
-import { FAQ } from "@/components/FAQ.tsx"
+import { Hero } from "@/components/hero"
+import { Services } from "@/components/services"
+import { Info } from "@/components/info"
+import { FeatureGrid } from "@/components/feature-grid"
+import { Features } from "@/components/features"
+import { ReviewCards } from "@/components/reviews"
+import { FAQ } from "@/components/FAQ"
 
 export const Route = createFileRoute('/')({
   component: HomeComponent,
@@ -20,6 +21,7 @@ function HomeComponent() {
         </div>
       </div>
       <Info />
+      <FeatureGrid />
       <Features />
       <ReviewCards />
       <FAQ />
