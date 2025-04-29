@@ -143,7 +143,7 @@ export const FeatureGrid = () => {
                   src="/dashboard.png"/>
               </div>
               <div className="space-x-1 p-4 text-sm border-t">
-                <span className="font-medium text-cyan-500">Custom Dashboard:</span>
+                <span className="font-medium text-cyan-500">Custom dashboard:</span>
                 <span className="text-neutral-300">
                 View and manage your numbers effortlessly in our user-friendly environment, built from the ground up.
               </span>
@@ -174,7 +174,7 @@ export const FeatureGrid = () => {
                 </div>
               </div>
               <div className="space-x-1 p-4 text-sm border-t">
-                <span className="text-cyan-500 font-medium">Secure Payments:</span>
+                <span className="text-cyan-500 font-medium">Secure payments:</span>
                 <span className="text-neutral-300">
                 We support trusted payment methods ensuring you can make safe transactions the way you want!
               </span>
