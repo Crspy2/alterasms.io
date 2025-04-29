@@ -51,6 +51,18 @@ const reviews = [
         body: "+rep Great way to get any phone number for verification",
         img: "/avatars/wrecxkd_avatar.gif",
     },
+    {
+        name: "Bit",
+        username: "@bitdotdash",
+        body: "+rep @Crspy Helped out quick and phone number worked for Ubisoft ✅",
+        img: "/avatars/bit_avatar.webp",
+    },
+    {
+        name: "selo",
+        username: "@sselo25",
+        body: "+rep @Crspy the goat helped me with a lot of stuff phone number and everything worked for ubisoft",
+        img: "/avatars/selo_avatar.png",
+    }
 ]
 
 const firstRow = reviews.slice(0, reviews.length / 2)
@@ -92,9 +104,9 @@ const ReviewCard = ({
 export const ReviewCards = () => {
     return (
         <div className="flex flex-col gap-12 md:mt-12">
-            <div className="flex flex-col justify-center items-center gap-y-4">
-                <h3 className="text-3xl font-semibold font-poppins">What People Are Saying</h3>
-                <span className="text-neutral-200 max-w-lg text-center">
+            <div className="flex flex-col md:items-center text-start md:text-center gap-y-2 px-4">
+                <h3 className="text-3xl font-semibold font-poppins">What people are saying</h3>
+                <span className="text-neutral-300 text-sm max-w-xl">
                     Don&apos;t just take our word for it. Here&apos;s what <strong>real people</strong> are saying about AlteraSMS in our{" "}
                     <LinkPreview url="https://discord.gg/ku8dp8cdSs"
                                  className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">

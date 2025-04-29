@@ -4,10 +4,10 @@ import {
     motion,
 } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import { LinkPreview } from "@/components/ui/link-preview.tsx"
-import { AnimatedSteps } from "@/components/animated-steps.tsx"
-import { ServiceCloud } from "@/components/service-cloud.tsx"
-import { CommunicationModel } from "@/components/communication-model.tsx"
+import { LinkPreview } from "@/components/ui/link-preview"
+import { AnimatedSteps } from "@/components/animated-steps"
+import { ServiceCloud } from "@/components/service-cloud"
+import { CommunicationModel } from "@/components/communication-model"
 import { MdAutoMode } from "react-icons/md"
 import { FaTasks } from "react-icons/fa"
 import { FaLayerGroup } from "react-icons/fa6"
@@ -41,7 +41,7 @@ const items = [
             </ol>
         ),
         rightcontent: (
-            <AnimatedSteps className="max-w-xl"/>
+            <AnimatedSteps className="relative max-w-xl"/>
         )
     },
     {
@@ -108,15 +108,21 @@ export const Features = () => {
 
     return (
         <div
-            className="w-full font-sans md:px-10 -mt-20"
+            className="flex flex-col justify-center items-center w-full font-sans md:px-10 mt-28"
             ref={containerRef}
         >
+            <div className="flex flex-col text-start md:text-center gap-y-4 px-4">
+                <h3 className="text-3xl font-semibold font-poppins">How it works</h3>
+                <p className="text-neutral-300 text-sm max-w-xl">
+                      From signup to verification code, AlteraSMS makes the process of verifying your accounts simple and efficient. Explore our key features designed to streamline your experience.
+                </p>
+            </div>
             <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
                 {/* Body of timeline*/}
                 {items.map((item, index) => (
                     <div
                         key={index}
-                        className="flex justify-start pt-10 md:pt-40 md:gap-10"
+                        className="flex justify-start pt-10 md:gap-10"
                     >
                         <div
                             className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-lg md:w-full">

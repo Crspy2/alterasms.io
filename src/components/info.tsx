@@ -4,10 +4,16 @@ import { TbLabelImportantFilled } from "react-icons/tb"
 export const Info = () => {
   return (
     <div className="flex flex-col gap-y-3.5 items-center px-4 md:px-10 my-16 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-semibold font-poppins">SMS verification that <strong>JUST</strong> works.</h2>
+      <div className="flex flex-col text-start md:text-center gap-y-2 px-4 md:my-8">
+        <h3 className="text-3xl font-semibold font-poppins">SMS verification that <strong>JUST</strong> works.</h3>
+        <p className="text-neutral-300 text-sm max-w-xl">
+          From signup to verification code, AlteraSMS makes the process of verifying your accounts simple and efficient. Explore our key features designed to streamline your experience.
+        </p>
+      </div>
+      {/*<h2 className="text-3xl font-semibold font-poppins">SMS verification that <strong>JUST</strong> works.</h2>*/}
       <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-4">
         <img src="/numbers.png" alt="Picture of numbers listed on our dashboard" />
-        <div className="flex flex-col justify-evenly gap-y-4 md:-mt-3">
+        <div className="flex flex-col md:justify-evenly gap-y-8 md:gap-y-4 md:-mt-3">
           <div className="flex flex-row gap-x-2.5">
             <TbLabelImportantFilled className="flex-shrink-0 mt-2 size-7 text-cyan-400" />
             <div>
