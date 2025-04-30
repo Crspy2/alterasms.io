@@ -41,6 +41,7 @@ const PaymentMethods = [
     {
       name: "Amex",
       src: Amex,
+      className: "-p-3 aspect-video bg-[#027DC2]"
     },
     {
       name: "Discover",
