@@ -112,8 +112,8 @@ export const Features = () => {
             ref={containerRef}
         >
             <div className="flex flex-col text-start md:text-center gap-y-4 px-4">
-                <h3 className="text-3xl font-semibold font-poppins">How it works</h3>
-                <p className="text-neutral-300 text-sm max-w-xl">
+                <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-semibold font-poppins">How it works</h3>
+                <p className="text-neutral-300 text-sm xl:text-base 2xl:text-lg max-w-xl 2xl:max-w-2xl">
                       From signup to verification code, AlteraSMS makes the process of verifying your accounts simple and efficient. Explore our key features designed to streamline your experience.
                 </p>
             </div>

@@ -26,7 +26,7 @@ export const Navigation = () => {
                 scrolled && "pointer-events-none"
             )}
         >
-            <div className="container flex h-full max-w-screen-2xl items-center">
+            <div className="container flex h-full max-w-screen-2xl 2xl:max-w-none mx-16 items-center">
                 {/* Desktop Nav */}
                 <div className="hidden w-full items-center justify-between md:flex">
                     <div className="w-[130px]">
@@ -95,7 +95,7 @@ export const Navigation = () => {
                             variant="quiet"
                             aria-label="discord"
                         >
-                            <FaDiscord />
+                            <FaDiscord className="size-14" />
                         </Button>
                     </div>
                 </div>
