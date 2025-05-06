@@ -82,7 +82,7 @@ export function Services() {
         <div
           className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-black"></div>
       </div>
-      <span className="text-xs mx-auto">Over <strong>1000</strong> supported services for you to choose from. — We are not affiliated with the services listed above.</span>
+      <span className="text-xs xl:text-sm 2xl:text-base mx-4 sm:mx-auto text-center">Over <strong>1000</strong> supported services for you to choose from. — We are not affiliated with the services listed above.</span>
     </div>
   );
 }
