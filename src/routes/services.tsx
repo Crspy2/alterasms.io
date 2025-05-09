@@ -60,7 +60,7 @@ function ServicesRoute() {
 
 
   return (
-    <main className="flex flex-col justify-center items-center mt-24">
+    <main className="flex flex-col justify-center items-center mt-24 pb-10">
       <h1 className="text-5xl font-bold font-poppins">Service List</h1>
       <div className="flex justify-center items-start min-h-screen py-8 -mr-16">
         <div className="w-full max-w-7xl px-4">

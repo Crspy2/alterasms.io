@@ -6,7 +6,7 @@ export const Route = createFileRoute('/terms')({
 
 function TermsRoute() {
   return (
-    <main className="pt-40 text-center">
+    <main className="pt-40 text-center pb-10">
       <h1 className="text-5xl font-bold text-white font-poppins">Terms of Service</h1>
       <p className="text-xl text-zinc-300 font-poppins">Last Updated on September 16, 2024</p>
       <div className="max-w-2xl px-5 mx-auto mt-24 text-left">
