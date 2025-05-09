@@ -26,9 +26,9 @@ export const Footer = () => {
         <a href="https://vacban.wtf/threads/89618/" target="_blank" className="my-auto">
           <img src="/socials/vacban.png" alt="Vacban logo" className="w-6" />
         </a>
-        <a href="https://www.elitepvpers.com/forum/trading/5298480-cheap-reliable-sms-verification.html#post40274683" target="_blank">
-          <img src="/socials/elitepvpers.png" alt="ElitePVPers logo" className="size-6 bg-neutral-300 rounded-md" />
-        </a>
+        {/*<a href="https://www.elitepvpers.com/forum/trading/5298480-cheap-reliable-sms-verification.html#post40274683" target="_blank">*/}
+        {/*  <img src="/socials/elitepvpers.png" alt="ElitePVPers logo" className="size-6 bg-neutral-300 rounded-md" />*/}
+        {/*</a>*/}
       </div>
       <div>
         <p className="text-xs sm:text-sm font-light">© 2025 AlteraSMS. All Rights Reserved.</p>
