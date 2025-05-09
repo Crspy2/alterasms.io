@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight"
 import AnimatedShinyText from "@/components/ui/animated-shiny-text"
 import ShinyButton from "@/components/ui/shiny-button"
-
+ 
 export const Hero = () => {
     return (
         <HeroHighlight>
