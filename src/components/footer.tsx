@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { FaDiscord } from "react-icons/fa6"
+import {FaTelegramPlane} from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -16,8 +17,17 @@ export const Footer = () => {
         </Link>
       </div>
       <div className="flex gap-x-5">
-        <a href="https://discord.gg/ku8dp8cdSs">
+        <a href="https://discord.gg/ku8dp8cdSs" target="_blank">
           <FaDiscord className="size-6" />
+        </a>
+        <a href="https://t.me/alterasms" target="_blank">
+          <FaTelegramPlane className="size-6" />
+        </a>
+        <a href="https://vacban.wtf/threads/89618/" target="_blank" className="my-auto">
+          <img src="/socials/vacban.png" alt="Vacban logo" className="w-6" />
+        </a>
+        <a href="https://www.elitepvpers.com/forum/trading/5298480-cheap-reliable-sms-verification.html#post40274683" target="_blank">
+          <img src="/socials/elitepvpers.png" alt="ElitePVPers logo" className="size-6 bg-neutral-300 rounded-md" />
         </a>
       </div>
       <div>

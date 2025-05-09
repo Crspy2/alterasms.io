@@ -1,13 +1,14 @@
 
 import { useEffect, useState } from "react"
 import { Link, useRouter } from '@tanstack/react-router'
-import { Avatar } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { useScrolled } from "@/hooks/use-scrolled";
-import { cn } from "@/lib/utils/classes";
-import { focusRing } from "@/lib/utils/styles";
-import { FaDiscord } from "react-icons/fa6";
+import { Avatar } from "@/components/ui/avatar"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { useScrolled } from "@/hooks/use-scrolled"
+import { cn } from "@/lib/utils/classes"
+import { focusRing } from "@/lib/utils/styles"
+import { FaDiscord } from "react-icons/fa6"
+import { FaTelegramPlane} from "react-icons/fa"
 
 const links = [
     { href: "/#faq", label: "FAQ" },
@@ -90,12 +91,22 @@ export const Navigation = () => {
                         <Button
                             href="https://discord.gg/ku8dp8cdSs"
                             target="_blank"
-                            size="sm"
+                            size="lg"
                             shape="square"
                             variant="quiet"
                             aria-label="discord"
                         >
-                            <FaDiscord className="size-14" />
+                            <FaDiscord className="size-12" />
+                        </Button>
+                        <Button
+                          href="https://t.me/alterasms"
+                          target="_blank"
+                          size="lg"
+                          shape="square"
+                          variant="quiet"
+                          aria-label="telegram"
+                        >
+                            <FaTelegramPlane className="size-12" />
                         </Button>
                     </div>
                 </div>
