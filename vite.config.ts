@@ -14,7 +14,7 @@ export default defineConfig({
         react(),
     ],
     server: {
-        allowedHosts: ["alterasms.io", "test.alterasms.io"]
+        allowedHosts: ["alterasms.io", "www.alterasms.io"]
     },
     resolve: {
         alias: {
