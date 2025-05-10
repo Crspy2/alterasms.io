@@ -13,6 +13,9 @@ export default defineConfig({
         TanStackRouterVite({}),
         react(),
     ],
+    server: {
+        allowedHosts: ["alterasms.io", "test.alterasms.io"]
+    },
     resolve: {
         alias: {
             '@': path.resolve(path.dirname("."), './src')
