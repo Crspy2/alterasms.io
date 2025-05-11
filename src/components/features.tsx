@@ -116,7 +116,7 @@ export const Features = () => {
                       From signup to verification code, AlteraSMS makes the process of verifying your accounts simple and efficient. Explore our key features designed to streamline your experience.
                 </p>
             </div>
-            <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+            <div ref={ref} className="relative max-w-[100dvw] sm:max-w-7xl mx-auto pb-20">
                 {/* Body of timeline*/}
                 {items.map((item, index) => (
                     <div
@@ -126,7 +126,7 @@ export const Features = () => {
                         <div
                             className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-lg md:w-full">
                             <div
-                                className="h-10 absolute left-3 md:left-3 w-10 rounded-full flex items-center justify-center">
+                                className="h-10 hidden sm:flex absolute left-3 md:left-3 w-10 rounded-full items-center justify-center">
                                 <div
                                     className="h-4 w-4 rounded-full bg-neutral-800 border border-neutral-700 p-2"/>
                             </div>
@@ -138,7 +138,7 @@ export const Features = () => {
                             </div>
                         </div>
 
-                        <div className="relative pl-20 pr-4 md:pl-4 w-full select-none">
+                        <div className="relative px-4 sm:pl-20 sm:pr-4 md:pl-4 w-full select-none">
                             <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-white">
                                 {item.title}
                             </h3>
@@ -150,7 +150,7 @@ export const Features = () => {
                     style={{
                         height: height + "px",
                     }}
-                    className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+                    className="hidden sm:block absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
                 >
                     <motion.div
                         style={{

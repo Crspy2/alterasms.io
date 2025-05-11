@@ -65,12 +65,13 @@ const services = [
   },
 ]
 
+// TODO: Decrease height of component
 export function Services() {
   return (
     <div className="flex flex-col w-full gap-y-4">
       <div
         className="select-none mt-auto relative flex flex-col w-full items-center justify-center overflow-hidden border-y bg-black md:shadow-xl py-2.5">
-        <Marquee repeat={13} className="[--duration:40s]">
+        <Marquee repeat={12} className="[--duration:40s]">
           {services.map((service) => (
             <span className="h-10 w-64 flex items-center justify-center mx-4 contrast-0 my-auto" key={service.name}>
               <img src={service.src} alt={service.name} className="h-14 w-auto" />
