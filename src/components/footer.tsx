@@ -17,7 +17,7 @@ export const Footer = () => {
         </Link>
       </div>
       <div className="flex gap-x-5">
-        <a href="https://discord.gg/ku8dp8cdSs" target="_blank">
+        <a href="https://discord.gg/alterasms" target="_blank">
           <FaDiscord className="size-6" />
         </a>
         <a href="https://t.me/alterasms" target="_blank">

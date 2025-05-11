@@ -105,11 +105,10 @@ export const ReviewCards = () => {
     return (
         <div className="flex flex-col gap-12 md:mt-12">
             <div className="flex flex-col md:items-center text-start md:text-center gap-y-2 px-4">
-                <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-semibold font-poppins">What people are saying</h3>
+                <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold font-poppins">What people are saying</h3>
                 <span className="text-neutral-300 text-sm xl:text-base 2xl:text-lg max-w-xl 2xl:max-w-2xl">
                     Don&apos;t just take our word for it. Here&apos;s what <strong>real people</strong> are saying about AlteraSMS in our{" "}
-                    <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                                 className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
+                    <LinkPreview url="https://discord.gg/alterasms">
                         Discord Server
                     </LinkPreview>.
                 </span>

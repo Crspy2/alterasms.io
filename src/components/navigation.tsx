@@ -48,7 +48,7 @@ export const Navigation = () => {
                                 height={24}
                                 className="size-6 rounded-sm"
                             />
-                            <div className="mt-1 font-josephin font-bold leading-normal tracking-tighter">
+                            <div className="font-josephin font-semibold leading-normal tracking-tighter">
                                 AlteraSMS
                             </div>
                             <Badge size="sm" variant="neutral" className="border">
@@ -89,7 +89,7 @@ export const Navigation = () => {
                         tabIndex={scrolled ? -1 : undefined}
                     >
                         <Button
-                            href="https://discord.gg/ku8dp8cdSs"
+                            href="https://discord.gg/alterasms"
                             target="_blank"
                             size="lg"
                             shape="square"

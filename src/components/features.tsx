@@ -55,8 +55,7 @@ const items = [
             <div className="text-neutral-200">
                 Connect with over 1500 websites and services across 150+ countries through our platform. Can&apos;t find what you need? Reach
                 out on our{" "}
-                <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                             className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
+                <LinkPreview url="https://discord.gg/alterasms">
                     Discord server
                 </LinkPreview>
                 , and we&apos;ll work to add your requested service.
@@ -112,7 +111,7 @@ export const Features = () => {
             ref={containerRef}
         >
             <div className="flex flex-col text-start md:text-center gap-y-4 px-4">
-                <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-semibold font-poppins">How it works</h3>
+                <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold font-poppins">How it works</h3>
                 <p className="text-neutral-300 text-sm xl:text-base 2xl:text-lg max-w-xl 2xl:max-w-2xl">
                       From signup to verification code, AlteraSMS makes the process of verifying your accounts simple and efficient. Explore our key features designed to streamline your experience.
                 </p>

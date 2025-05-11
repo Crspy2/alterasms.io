@@ -103,11 +103,8 @@ function PrivacyPolicyRoute(){
           <ul className="list-disc text-sm ml-4">
             <li><a href="mailto:support@alterasms.io" target="_blank" className="hover:underline underline-offset-1">support@alterasms.io</a></li>
             <li>
-              <LinkPreview
-                url="https://discord.gg/ku8dp8cdSs"
-                className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400"
-              >
-                https://discord.gg/ku8dp8cdSs
+              <LinkPreview url="https://discord.gg/alterasms">
+                https://discord.gg/alterasms
               </LinkPreview>
             </li>
           </ul>
