@@ -4,7 +4,8 @@ import { cn } from "@/lib/utils"
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight"
 import AnimatedShinyText from "@/components/ui/animated-shiny-text"
 import ShinyButton from "@/components/ui/shiny-button"
- 
+import PhoneEmoji from "@/assets/phone.svg"
+
 export const Hero = () => {
     return (
         <HeroHighlight>
@@ -32,23 +33,26 @@ export const Hero = () => {
                             )}
                         >
                             <AnimatedShinyText
-                                className="text-xs sm:text-sm md:text-base 2xl:text-2xl inline-flex items-center justify-center mx-4 md:my-1 2xl:mx-3 2xl:my-1  transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                                <span>📞 Get your secure number now!</span>
+                                className="text-xs sm:text-sm md:text-base 2xl:text-lg inline-flex items-center justify-center mx-4 md:my-1 2xl:mx-3 2xl:my-1  transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                                <span className="flex flex-row gap-x-2 items-center">
+                                    <img src={PhoneEmoji} alt="phone emoji" className="h-4 w-auto" />
+                                    Get your secure number now
+                                </span>
                                 <FaArrowRightLong
-                                    className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"/>
+                                    className="ml-1 w-auto h-4 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"/>
                             </AnimatedShinyText>
                         </a>
                     </div>
                     <div className="flex flex-col gap-10">
                         <div className="flex flex-col gap-y-3 2xl:gap-y-8 justify-center items-center">
                             <h1
-                                className="font-poppins font-bold text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl leading-relaxed md:leading-snug lg:leading-tight text-black dark:text-white">
+                                className="font-poppins font-bold text-2xl md:text-4xl lg:text-5xl leading-relaxed md:leading-snug lg:leading-tight text-black dark:text-white">
                                 Secure SMS Verification<br/>
                                 <Highlight className="text-black dark:text-white">
-                                    for everyone
+                                    Privacy Without Compromise
                                 </Highlight>
                             </h1>
-                            <h3 className="max-w-lg 2xl:max-w-3xl text-sm 2xl:text-xl text-neutral-200">
+                            <h3 className="max-w-lg 2xl:max-w-3xl text-sm 2xl:text-base text-neutral-200">
                                 Value your digital privacy and don&apos;t want to use your phone number? Protect
                                 yourself and use our non-VoIP phone numbers to verify your accounts.
                             </h3>
