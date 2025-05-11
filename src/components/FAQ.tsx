@@ -46,7 +46,7 @@ export const FAQ = () => {
             <div className="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                     <div className="flex flex-col lg:col-span-5">
-                        <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-semibold font-poppins">Frequently asked questions</h2>
+                        <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold font-poppins">Frequently asked questions</h2>
                         <span className="mt-4 text-neutral-300 text-sm xl:text-base 2xl:text-lg">
                             Can’t find the answer you’re looking for? Reach out to our customer support team through{' '}
                             <LinkPreview url="https://discord.gg/alterasms">
