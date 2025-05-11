@@ -55,8 +55,7 @@ const items = [
             <div className="text-neutral-200">
                 Connect with over 1500 websites and services across 150+ countries through our platform. Can&apos;t find what you need? Reach
                 out on our{" "}
-                <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                             className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
+                <LinkPreview url="https://discord.gg/alterasms">
                     Discord server
                 </LinkPreview>
                 , and we&apos;ll work to add your requested service.

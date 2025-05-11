@@ -49,8 +49,7 @@ export const FAQ = () => {
                         <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-semibold font-poppins">Frequently asked questions</h2>
                         <span className="mt-4 text-neutral-300 text-sm xl:text-base 2xl:text-lg">
                             Can’t find the answer you’re looking for? Reach out to our customer support team through{' '}
-                            <LinkPreview url="https://discord.gg/ku8dp8cdSs"
-                                         className="font-bold underline underline-offset-2 hover:underline-offset-4 transition-all decoration-cyan-400">
+                            <LinkPreview url="https://discord.gg/alterasms">
                                 Discord
                             </LinkPreview>.
                         </span>
