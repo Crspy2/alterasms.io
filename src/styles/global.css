@@ -3,8 +3,32 @@ layer(base);
 
 @import 'tailwindcss';
 
-.font-poppins {
-    font-family: "Poppins";
+@theme {
+  --color-card: hsl(240 6% 8%);
+  --color-muted: hsl(240 6% 13%);
+  --color-border: hsl(240 6% 19%);
+  --color-foreground: hsl(240 10% 98%);
+}
+
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-muted, currentcolor);
+    opacity: 80;
+  }
+  * {
+    @apply border-border font-["Inter"];
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-zinc-950 text-foreground;
+  }
 }
 
 @keyframes marquee {
@@ -16,11 +40,24 @@ layer(base);
 }
 }
 
-/* Default dots with transparent background */
+::selection {
+  @apply bg-cyan-700;
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.font-poppins {
+    font-family: "Poppins";
+}
+
 .bg-dot-thick { /* blue-500 */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16'%3E%3Ccircle fill='%23262626' cx='10' cy='10' r='2.5'/%3E%3C/svg%3E");
   background-repeat: repeat;
-  transition: background-image 0.3s ease-in-out; /* Smooth transition on hover */
+  transition: background-image 0.3s ease-in-out;
 }
 .bg-dot-thick-hover {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16'%3E%3Ccircle fill='%232563eb' cx='10' cy='10' r='2.5'/%3E%3C/svg%3E");
