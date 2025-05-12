@@ -4,6 +4,7 @@ import { cn } from "../lib/utils"
 import { HeroHighlight, Highlight } from "./custom/hero-highlight"
 import ShinyBanner from "./custom/shiny-banner"
 import ShinyButton from "./custom/shiny-button"
+// @ts-ignore
 import PhoneEmoji from "../assets/phone.svg"
 import { MoveRight } from "lucide-react"
 

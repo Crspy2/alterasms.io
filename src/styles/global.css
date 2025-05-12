@@ -31,6 +31,15 @@ layer(base);
   }
 }
 
+@keyframes shimmer {
+  0%, 90%, 100% {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+  30%, 60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(100%);
