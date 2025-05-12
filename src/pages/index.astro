@@ -3,11 +3,12 @@ import Hero from '@/components/hero'
 import Info from '@/components/info.astro'
 import Boxes from '@/components/boxes.astro'
 import ServicesMarquee from '@/components/services-marquee'
+import Steps from '@/components/steps'
 import Layout from '@/layouts/Layout.astro'
 ---
 
 <Layout>
-	<div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col">
     <div class="flex-grow">
       <Hero client:load />
     </div>
@@ -15,4 +16,5 @@ import Layout from '@/layouts/Layout.astro'
   </div>
   <Info />
   <Boxes />
+  <Steps client:idle />
 </Layout>
