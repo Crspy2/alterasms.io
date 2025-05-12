@@ -1,0 +1,98 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import services from '@/data/services.json'
+
+interface Service {
+  ID: number
+  name: string
+}
+
+interface ServiceWithLetter extends Service {
+  letter: string
+}
+
+interface LetterGroup {
+  letter: string
+  services: ServiceWithLetter[]
+}
+
+// Group services by first letter (or '0-9' for numbers)
+const groupedServices: Record<string, Service[]> = services.reduce((acc: Record<string, Service[]>, service) => {
+  const firstChar = service.name[0].toUpperCase()
+  const key = /[0-9]/.test(firstChar) ? '0-9' : firstChar
+  if (!acc[key]) acc[key] = []
+  acc[key].push(service)
+  return acc
+}, {})
+
+// Sort the keys and create an array of entries
+const sortedGroups: [string, Service[]][] = Object.entries(groupedServices).sort((a, b) =>
+  a[0] === '0-9' ? -1 : b[0] === '0-9' ? 1 : a[0].localeCompare(b[0])
+)
+
+// Function to split services into balanced columns
+const splitIntoBalancedColumns = (groups: [string, Service[]][], numColumns: number): ServiceWithLetter[][] => {
+  const flatServices: ServiceWithLetter[] = groups.flatMap(([letter, services]) =>
+    services.map(service => ({ ...service, letter }))
+  )
+  const totalServices = flatServices.length
+  const targetColumnSize = Math.ceil(totalServices / numColumns)
+
+  const columns: ServiceWithLetter[][] = Array.from({ length: numColumns }, () => [])
+  let currentColumn = 0
+
+  flatServices.forEach((service, index) => {
+    if (index > 0 && index % targetColumnSize === 0 && currentColumn < numColumns - 1) {
+      currentColumn++
+    }
+    columns[currentColumn].push(service);
+  });
+
+  return columns;
+};
+
+const columns: ServiceWithLetter[][] = splitIntoBalancedColumns(sortedGroups, 3);
+---
+
+
+<Layout>
+  <main class="flex flex-col justify-center items-center mt-24 pb-10">
+    <h1 class="text-7xl font-bold font-poppins">Service List</h1>
+    <div class="flex justify-center items-start min-h-screen py-8 -mr-16">
+      <div class="w-full max-w-7xl px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {
+            columns.map((column, columnIndex) => {
+              const letterGroups: LetterGroup[] = column.reduce((acc: LetterGroup[], service) => {
+                if (acc.length === 0 || acc[acc.length - 1].letter !== service.letter) {
+                  acc.push({ letter: service.letter, services: [service] });
+                } else {
+                  acc[acc.length - 1].services.push(service);
+                }
+                return acc;
+              }, []);
+              return (
+                <div class="rounded-lg p-4">
+                  {
+                    letterGroups.map(({ letter, services }) => (
+                      <div class="mb-6">
+                          <h2 class="text-xl font-bold mb-2">{letter}</h2>
+                          <ul class="text-left">
+                            {
+                              services.map(item => (
+                                      <li class="mb-1">{item.name}</li>
+                              ))
+                            }
+                          </ul>
+                      </div>
+                    ))
+                  }
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
