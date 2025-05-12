@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+layer(base);
+
+@import 'tailwindcss';
+
+.font-poppins {
+    font-family: "Poppins";
+}
+
+@keyframes marquee {
+0% {
+    transform: translateX(100%);
+}
+100% {
+    transform: translateX(-100%);
+}
+}
+
+/* Default dots with transparent background */
+.bg-dot-thick { /* blue-500 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16'%3E%3Ccircle fill='%23262626' cx='10' cy='10' r='2.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  transition: background-image 0.3s ease-in-out; /* Smooth transition on hover */
+}
+.bg-dot-thick-hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='16' height='16'%3E%3Ccircle fill='%232563eb' cx='10' cy='10' r='2.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  transition: all 0.3s ease-in-out;
+}
