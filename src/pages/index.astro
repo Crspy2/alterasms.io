@@ -1,0 +1,24 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Hero from '@/components/hero'
+import Info from '@/components/info.astro'
+import Boxes from '@/components/boxes.astro'
+import ServicesMarquee from '@/components/services-marquee'
+import Steps from '@/components/steps'
+import Reviews from '@/components/reviews'
+import Faq from '@/components/faq'
+---
+
+<Layout>
+  <div class="min-h-screen flex flex-col">
+    <div class="flex-grow">
+      <Hero client:load />
+    </div>
+      <ServicesMarquee />
+  </div>
+  <Info />
+  <Boxes />
+  <Steps client:idle />
+  <Reviews client:visible />
+  <Faq client:visible />
+</Layout>
