@@ -95,7 +95,7 @@ const LinkPreview = ({
           onMouseMove={handleMouseMove}
           className={cn(
             "text-white",
-            "transition-all duration-300 font-bold underline underline-offset-2 hover:decoration-2 decoration-cyan-400",
+            "font-bold underline underline-offset-2 decoration-1 hover:decoration-2 decoration-cyan-400",
             className
           )}
           href={url}

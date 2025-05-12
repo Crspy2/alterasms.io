@@ -1,10 +1,12 @@
 ---
+import Layout from '@/layouts/Layout.astro'
 import Hero from '@/components/hero'
 import Info from '@/components/info.astro'
 import Boxes from '@/components/boxes.astro'
 import ServicesMarquee from '@/components/services-marquee'
 import Steps from '@/components/steps'
-import Layout from '@/layouts/Layout.astro'
+import Reviews from '@/components/reviews'
+import Faq from '@/components/faq'
 ---
 
 <Layout>
@@ -17,4 +19,6 @@ import Layout from '@/layouts/Layout.astro'
   <Info />
   <Boxes />
   <Steps client:idle />
+  <Reviews client:visible />
+  <Faq client:visible />
 </Layout>

@@ -42,7 +42,7 @@ const Navigation = ({ currentPath }: { currentPath: string}) => {
               >
                 <Avatar className="size-6 rounded-sm">
                   <AvatarImage src="/altera_dark.png" alt="AlteraSMS brand logo" />
-                  <AvatarFallback></AvatarFallback>
+                  <AvatarFallback>SMS</AvatarFallback>
                 </Avatar>
                 <div className="font-josephin font-semibold leading-normal tracking-tighter">
                   AlteraSMS
