@@ -97,7 +97,7 @@ const PaymentMethods = [
 export const FeatureGrid = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-y-6">
-      <div className="flex flex-col text-start md:text-center gap-y-4 md:px-4">
+      <div className="flex flex-col text-start md:text-center gap-y-4 px-4 md:my-8">
         <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold font-poppins">Why choose us?</h3>
         <p className="text-neutral-300 text-sm xl:text-base 2xl:text-lg max-w-xl 2xl:max-w-2xl">
           Experience premium SMS verification with unmatched reliability and convenience. Our platform combines robust security, intuitive tools, and flexible payment options to deliver a seamless verification experience every time.
