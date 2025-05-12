@@ -1,119 +1,59 @@
 import * as React from "react"
-import {
-    composeRenderProps,
-    Button as AriaButton,
-    Link as AriaLink,
-    type ButtonProps as AriaButtonProps,
-    type LinkProps as AriaLinkProps,
-} from "react-aria-components"
-import { tv, type VariantProps } from "tailwind-variants"
-import { LucideLoader2 as LuLoader2 } from "lucide-react"
+import { Slot } from "@radix-ui/react-slot"
+import { cva, type VariantProps } from "class-variance-authority"
 
-const buttonStyles = tv(
-    {
-        // extend: focusRing,
-        base: "inline-flex gap-2 cursor-pointer items-center justify-center whitespace-nowrap rounded-md leading-normal text-sm shrink-0 font-medium ring-offset-background transition-colors disabled:cursor-default disabled:bg-bg-disabled disabled:text-fg-disabled",
-        variants: {
-            variant: {
-                default:
-                    "bg-bg-neutral hover:bg-bg-neutral-hover pressed:bg-bg-neutral-active text-fg-onNeutral",
-                primary:
-                    "bg-bg-primary hover:bg-bg-primary-hover pressed:bg-bg-primary-active text-fg-onPrimary",
-                quiet: "bg-transparent hover:bg-bg-inverse/10 pressed:bg-bg-inverse/20 text-fg",
-                outline:
-                    "border border-border-field bg-transparent hover:bg-bg-inverse/10 pressed:bg-bg-inverse/20 text-fg disabled:border-border-disabled disabled:bg-transparent",
-                accent:
-                    "bg-bg-accent hover:bg-bg-accent-hover pressed:bg-bg-accent-active text-fg-onAccent",
-                success:
-                    "bg-bg-success hover:bg-bg-success-hover pressed:bg-bg-success-active text-fg-onSuccess",
-                warning:
-                    "bg-bg-warning hover:bg-bg-warning-hover pressed:bg-bg-warning-active text-fg-onWarning",
-                danger:
-                    "bg-bg-danger hover:bg-bg-danger-hover pressed:bg-bg-danger-active text-fg-onDanger",
-            },
-            size: {
-                sm: "h-8 px-3 [&_svg]:size-4",
-                md: "h-9 px-4 [&_svg]:size-4",
-                lg: "h-10 px-5 [&_svg]:size-5",
-            },
-            shape: {
-                rectangle: "",
-                square: "",
-                circle: "rounded-full",
-            },
-        },
-        compoundVariants: [
-            {
-                size: "sm",
-                shape: ["square", "circle"],
-                className: "w-8 px-0",
-            },
-            {
-                size: "md",
-                shape: ["square", "circle"],
-                className: "w-9 px-0",
-            },
-            {
-                size: "lg",
-                shape: ["square", "circle"],
-                className: "w-10 px-0",
-            },
-        ],
-        defaultVariants: {
-            variant: "default",
-            size: "md",
-            shape: "rectangle",
-        },
+import { cn } from "@/lib/utils"
+
+const buttonVariants = cva(
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  {
+    variants: {
+      variant: {
+        default:
+          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+        destructive:
+          "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+        outline:
+          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        secondary:
+          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+        ghost:
+          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+        link: "text-primary underline-offset-4 hover:underline",
+      },
+      size: {
+        default: "h-9 px-4 py-2 has-[>svg]:px-3",
+        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        icon: "size-9",
+      },
     },
-    {
-        responsiveVariants: ["sm", "lg"],
-    }
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  }
 )
 
-interface ButtonProps
-    extends Omit<AriaButtonProps, "className">,
-        Omit<AriaLinkProps, "className" | "children" | "style">,
-        VariantProps<typeof buttonStyles> {
-    className?: string
-    isLoading?: boolean
-    prefix?: React.ReactNode
-    suffix?: React.ReactNode
-    onClick?: () => void
+function Button({
+  className,
+  variant,
+  size,
+  asChild = false,
+  ...props
+}: React.ComponentProps<"button"> &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean
+  }) {
+  const Comp = asChild ? Slot : "button"
+
+  return (
+    <Comp
+      data-slot="button"
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    />
+  )
 }
 
-const Button = React.forwardRef(
-    (localProps: ButtonProps, ref: React.ForwardedRef<HTMLButtonElement>) => {
-        const contextProps = useButtonContext()
-        const props = { ...contextProps, ...localProps }
-        const { className, variant, size, shape, isDisabled, isLoading, prefix, suffix, ...restProps } =
-            props
-        const Element: React.ElementType = props.href ? AriaLink : AriaButton
-        return (
-            <Element
-                ref={ref}
-                {...restProps}
-                onClick={props.onClick}
-                isDisabled={isDisabled || isLoading}
-                className={buttonStyles({ variant, size, shape, className })}
-            >
-                {composeRenderProps(props.children, (children) => (
-                    <>
-                        {isLoading ? <LuLoader2 aria-label="loading" className="animate-spin" /> : prefix}
-                        {typeof children === "string" ? <span className="truncate">{children}</span> : children}
-                        {suffix}
-                    </>
-                ))}
-            </Element>
-        )
-    }
-)
-Button.displayName = "Button"
-
-type ButtonContextValue = VariantProps<typeof buttonStyles>
-const ButtonContext = React.createContext<ButtonContextValue>({})
-const useButtonContext = () => {
-    return React.useContext(ButtonContext)
-}
-
-export type { ButtonProps }
-export { Button, buttonStyles, ButtonContext }
+export { Button, buttonVariants }
