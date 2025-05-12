@@ -2,7 +2,7 @@
 import {MotionValue, useMotionValue} from "framer-motion"
 import { useState, useEffect } from "react"
 import { useMotionTemplate, motion } from "framer-motion"
-import { cn } from "../../lib/utils"
+import { cn } from "@/lib/utils"
 
 const EvervaultCard = ({
                                 text,

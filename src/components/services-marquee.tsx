@@ -1,17 +1,17 @@
-import Marquee from "../components/custom/marquee"
+import Marquee from "@/components/custom/marquee"
 
-import Activision from "../assets/services/activision.svg"
-import Amazon from "../assets/services/amazon.svg"
-import Blizzard from "../assets/services/blizzard.svg"
-import Coinbase from "../assets/services/coinbase.svg"
-import Discord from "../assets/services/discord.svg"
-import Onlyfans from "../assets/services/onlyfans.svg"
-import OpenAI from "../assets/services/openai.svg"
-import PayPal from "../assets/services/paypal.svg"
-import Rainbow from "../assets/services/rainbowsix.svg"
-import Riot from "../assets/services/riot.svg"
-import Spotify from "../assets/services/spotify.svg"
-import Stripe from "../assets/services/stripe.svg"
+import Activision from "@/assets/services/activision.svg"
+import Amazon from "@/assets/services/amazon.svg"
+import Blizzard from "@/assets/services/blizzard.svg"
+import Coinbase from "@/assets/services/coinbase.svg"
+import Discord from "@/assets/services/discord.svg"
+import Onlyfans from "@/assets/services/onlyfans.svg"
+import OpenAI from "@/assets/services/openai.svg"
+import PayPal from "@/assets/services/paypal.svg"
+import Rainbow from "@/assets/services/rainbowsix.svg"
+import Riot from "@/assets/services/riot.svg"
+import Spotify from "@/assets/services/spotify.svg"
+import Stripe from "@/assets/services/stripe.svg"
 
 
 const services = [
@@ -69,7 +69,7 @@ const ServicesMarquee = () => {
   return (
       <div className="flex flex-col w-full gap-y-4">
         <div
-          className="select-none mt-auto relative flex flex-col w-full items-center justify-center overflow-hidden border-y border-neutral-700/30 bg-black md:shadow-xl py-2.5">
+          className="select-none mt-auto relative flex flex-col w-full items-center justify-center overflow-hidden border-y border-zinc-700/30 bg-black md:shadow-xl py-2.5">
           <Marquee repeat={12} className="[--duration:40s]">
             {services.map((service) => (
               <span className="h-10 w-64 flex items-center justify-center mx-4 contrast-0 my-auto" key={service.name}>
@@ -82,7 +82,7 @@ const ServicesMarquee = () => {
           <div
             className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-black"></div>
         </div>
-        <p className="text-neutral-300 text-xs xl:text-sm 2xl:text-base mx-2 text-center">Over <strong>1000</strong> supported services for you to choose from. — We are not affiliated with the services listed above.</p>
+        <p className="text-zinc-300 text-xs xl:text-sm 2xl:text-base mx-2 text-center">Over <strong>1000</strong> supported services for you to choose from. — We are not affiliated with the services listed above.</p>
       </div>
     );
 }

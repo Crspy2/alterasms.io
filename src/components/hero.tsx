@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
 
-import { cn } from "../lib/utils"
+import { cn } from "@/lib/utils"
 import { HeroHighlight, Highlight } from "./custom/hero-highlight"
 import ShinyBanner from "./custom/shiny-banner"
 import ShinyButton from "./custom/shiny-button"
 // @ts-ignore
-import PhoneEmoji from "../assets/phone.svg"
+import PhoneEmoji from "@/assets/phone.svg"
 import { MoveRight } from "lucide-react"
 
 const Hero = () => {
@@ -31,10 +31,10 @@ const Hero = () => {
                         <a
                             href="https://dash.alterasms.io"
                             className={cn(
-                                "group rounded-full border  border-white/5 bg-neutral-900 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-800",
+                                "group rounded-full border  border-white/5 bg-zinc-900 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-zinc-800",
                             )}
                         >
-                            <ShinyBanner className="flex flex-row gap-x-2 items-center justify-center transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                            <ShinyBanner className="flex flex-row gap-x-2 items-center justify-center transition ease-out hover:text-zinc-600 hover:duration-300 hover:dark:text-zinc-400">
                                 <img src={PhoneEmoji.src} alt="phone emoji" className="h-2.5 sm:h-4 w-auto" />
                                 <span>Get your secure number now</span>
                                 <MoveRight className="ml-1 w-auto h-3 sm:h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"/>
@@ -50,7 +50,7 @@ const Hero = () => {
                                     Privacy Without Compromise
                                 </Highlight>
                             </h1>
-                            <h3 className="max-w-lg 2xl:max-w-3xl text-sm 2xl:text-base text-neutral-200">
+                            <h3 className="max-w-lg 2xl:max-w-3xl text-sm 2xl:text-base text-zinc-200">
                                 Value your digital privacy and don&apos;t want to use your phone number? Protect
                                 yourself and use our non-VoIP phone numbers to verify your accounts.
                             </h3>

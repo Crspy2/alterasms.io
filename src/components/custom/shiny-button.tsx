@@ -1,5 +1,5 @@
 import { motion, type AnimationProps } from "framer-motion"
-import { cn } from "../../lib/utils"
+import { cn } from "@/lib/utils"
 
 const animationProps = {
   initial: { "--x": "100%", scale: 0.8 },
@@ -35,13 +35,13 @@ const ShinyButton = ({
       <motion.button
           {...animationProps}
           className={cn(
-              "bg-black relative cursor-pointer rounded-lg px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,hsl(0_0%_98%/10%)_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_hsl(0_0%_98%/10%)]",
+              "relative cursor-pointer rounded-lg px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out bg-[radial-gradient(circle_at_50%_0%,hsl(0_0%_98%/10%)_0%,transparent_60%)] hover:shadow-[0_0_20px_hsl(0_0%_98%/10%)]",
               className,
           )}
           onClick={onClick}
       >
       <span
-          className="relative block h-full w-full text-sm tracking-wide text-[rgb(0,0,0,65%)] dark:text-[rgb(255,255,255,90%)]"
+          className="relative block h-full w-full text-sm tracking-wide text-white"
           style={{
             maskImage:
                 "linear-gradient(-75deg,hsl(0_0%_98%) calc(var(--x) + 20%),transparent calc(var(--x) + 30%),hsl(0_0%_98%) calc(var(--x) + 100%))",
