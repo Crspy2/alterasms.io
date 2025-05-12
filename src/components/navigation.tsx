@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { buttonVariants } from "@/components/ui/button"
 import { useScrolled } from "@/hooks/use-scrolled"
 import { cn } from "@/lib/utils"
-import { focusRing } from "@/lib/utils"
 import { FaDiscord } from "react-icons/fa6"
 import { FaTelegramPlane} from "react-icons/fa"
 
@@ -34,7 +33,7 @@ const Navigation = ({ currentPath }: { currentPath: string}) => {
               <a
                 href="/"
                 className={cn(
-                  focusRing(),
+                  "outline-none ring-0 ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:ring-2",
                   "flex items-center space-x-2 rounded opacity-100 transition-[opacity,transform] duration-300 ease-out",
                   scrolled && "pointer-events-none -translate-x-2 opacity-0"
                 )}
@@ -61,7 +60,7 @@ const Navigation = ({ currentPath }: { currentPath: string}) => {
               <a
                 href="/"
                 className={cn(
-                  focusRing(),
+                  "outline-none ring-0 ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:ring-2",
                   "pointer-events-none absolute -translate-x-14 rounded opacity-0 transition-[opacity,transform] duration-300 ease-out",
                   scrolled && "-translate-x-10 opacity-100"
                 )}
@@ -144,7 +143,7 @@ const Nav = (props: NavProps) => {
               href={item.href}
               onClick={onNavItemClick}
               className={cn(
-                focusRing(),
+                "outline-none ring-0 ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:ring-2",
                 "flex items-center justify-center gap-2 rounded px-4 py-1 text-sm font-medium text-fg/60 transition-colors hover:text-fg",
                 props.currentPath.startsWith(item.href) && item.href !== "/" && "bg-bg-inverse/10 text-fg",
                 item.href === `/${fragment}` && "bg-bg-inverse/10 text-fg",
